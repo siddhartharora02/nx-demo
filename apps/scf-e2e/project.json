@@ -1,0 +1,28 @@
+{
+  "root": "apps/scf-e2e",
+  "sourceRoot": "apps/scf-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/scf-e2e/cypress.json",
+        "devServerTarget": "scf:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "scf:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/scf-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["scf"]
+}

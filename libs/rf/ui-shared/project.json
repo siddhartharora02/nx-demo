@@ -1,0 +1,23 @@
+{
+  "root": "libs/rf/ui-shared",
+  "sourceRoot": "libs/rf/ui-shared/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/rf/ui-shared/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/rf/ui-shared"],
+      "options": {
+        "jestConfig": "libs/rf/ui-shared/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
