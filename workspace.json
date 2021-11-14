@@ -3,8 +3,8 @@
   "projects": {
     "rf": "apps/rf",
     "rf-e2e": "apps/rf-e2e",
-    "rf-ui-shared": "libs/rf/ui-shared",
     "scf": "apps/scf",
-    "scf-e2e": "apps/scf-e2e"
+    "scf-e2e": "apps/scf-e2e",
+    "shared-ui": "libs/shared/ui"
   }
 }

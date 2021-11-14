@@ -1,9 +1,9 @@
 module.exports = {
-  displayName: 'rf-ui-shared',
+  displayName: 'shared-ui',
   preset: '../../../jest.preset.js',
   transform: {
     '^.+\\.[tj]sx?$': 'babel-jest',
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../../coverage/libs/rf/ui-shared',
+  coverageDirectory: '../../../coverage/libs/shared/ui',
 };
